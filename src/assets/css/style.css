@@ -75,7 +75,7 @@ html {
   font-family: "Poppins", serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.75;
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 3 */
@@ -916,8 +916,8 @@ a.uk-link-reset,
   position: relative;
   left: -30px;
   width: 30px;
-  height: 1.15em;
-  margin-bottom: -1.15em;
+  height: 1.75em;
+  margin-bottom: -1.75em;
   display: list-item;
   list-style-position: inside;
   text-align: right;
@@ -973,8 +973,8 @@ a.uk-link-reset,
   position: relative;
   left: -30px;
   width: 30px;
-  height: 1.15em;
-  margin-bottom: -1.15em;
+  height: 1.75em;
+  margin-bottom: -1.75em;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%226%22%20height%3D%226%22%20viewBox%3D%220%200%206%206%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23818181%22%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -2433,7 +2433,7 @@ select.uk-form-width-xsmall {
 .uk-button-text {
   /* 1 */
   padding: 0;
-  line-height: 1.15;
+  line-height: 1.75;
   background: none;
   /* 2 */
   color: #333;
@@ -2478,7 +2478,7 @@ select.uk-form-width-xsmall {
 .uk-button-link {
   /* 1 */
   padding: 0;
-  line-height: 1.15;
+  line-height: 1.75;
   background: none;
   /* 2 */
   color: #1e87f0;
@@ -3596,7 +3596,7 @@ select.uk-form-width-xsmall {
   display: inline-block;
   padding: 0 10px;
   background: #dc4229;
-  line-height: 1.15;
+  line-height: 1.75;
   font-size: 0.875rem;
   color: #fff;
   vertical-align: middle;
@@ -5716,8 +5716,8 @@ ul.uk-nav-sub {
  ========================================================================== */
 .uk-nav-parent-icon > .uk-parent > a::after {
   content: "";
-  width: 1.15em;
-  height: 1.15em;
+  width: 1.75em;
+  height: 1.75em;
   float: right;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23818181%22%20stroke-width%3D%221.1%22%20points%3D%2210%201%204%207%2010%2013%22%20%2F%3E%0A%3C%2Fsvg%3E");
   background-repeat: no-repeat;
@@ -5807,7 +5807,7 @@ ul.uk-nav-sub {
  */
 .uk-nav-primary > li > a {
   font-size: 1.5rem;
-  line-height: 1.15;
+  line-height: 1.75;
   color: #999;
 }
 
@@ -8426,7 +8426,7 @@ ul.uk-nav-sub {
 
 .uk-text-default {
   font-size: 16px;
-  line-height: 1.15;
+  line-height: 1.75;
 }
 
 /* Weight modifier
@@ -9496,7 +9496,7 @@ iframe.uk-cover {
   display: block;
   margin-right: 10px;
   float: left;
-  font-size: 3.45em;
+  font-size: 5.25em;
   line-height: 1;
   margin-bottom: -2px;
 }
@@ -12602,13 +12602,19 @@ body {
   color: #dc4229;
 }
 
-.uk-input {
+.uk-input,
+textarea {
   margin-bottom: 20px;
   border: none;
   background-color: #fafafa;
   font-size: 16px;
   line-height: 28.5px;
   font-weight: 400;
+}
+
+.uk-input:focus,
+textarea:focus {
+  outline: none;
 }
 
 .uk-thumbnav li {
@@ -12876,12 +12882,25 @@ body {
   font-size: 30px;
 }
 
+#section-3 * + .uk-margin,
+#section-3 .uk-margin-top {
+  margin-top: 30px !important;
+}
+
 #section-3 .uk-overlay-primary {
+  background-color: rgba(243, 197, 101, 0.8);
+}
+
+#section-7 .uk-overlay-primary {
   background-color: rgba(243, 197, 101, 0.8);
 }
 
 #section-14 h3 {
   color: #fff;
+}
+
+#section-8 .uk-slider-container {
+  padding: 0px 10px;
 }
 
 #section-15 .uk-input {
